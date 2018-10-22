@@ -1,7 +1,7 @@
 # IPP
- 
+
 <details>
-<summary>## ImplementedPatterns </summary>
+<summary> **Lab1 ImplementedPatterns** </summary>
 
 - Abstract Factory
 - Factory
@@ -12,10 +12,9 @@ MicrosoftServiceFactory and AppleServiceFactory(concrete factories) → Service 
 
 ### Singleton
 Creates only a single instance of the same object
-</details>
-
-
 
 ![ScreenShot](screens/1.png)
 
 ![ScreenShot](screens/2.png)
+
+</details>
