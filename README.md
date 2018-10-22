@@ -45,11 +45,6 @@ class AppleServiceFactory(ServiceFactory):
 Creates only a single instance of of an object
 ```python3
 class Singleton(type):
-    """
-    Define an Instance operation that lets clients access its unique
-    instance.
-    """
-
     def __init__(cls, name, bases, attrs, **kwargs): # __init__(cls,...) where cls is classself 
         super().__init__(name, bases, attrs) 
         #The super function is used to gain access to inherited methods –
