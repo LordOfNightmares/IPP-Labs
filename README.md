@@ -9,7 +9,7 @@
 - Factory
 - Singleton
 
-### Abstract factory and Factory
+## Abstract factory and Factory
 MicrosoftServiceFactory and AppleServiceFactory(concrete factories) → Service factory(abstract factory)
 ```python3
 class ServiceFactory:
@@ -41,7 +41,7 @@ class AppleServiceFactory(ServiceFactory):
     def getDelivery(self):
         return AppleDelivery()
 ```
-### Singleton
+## Singleton
 Creates only a single instance of of an object
 ```python3
 class Singleton(type):
