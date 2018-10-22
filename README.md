@@ -1,5 +1,5 @@
 # IPP
-##ImplementedPatterns 
+## ImplementedPatterns 
 <details>
 <summary>Task</summary>
 
@@ -7,10 +7,10 @@
 - Factory
 - Singleton
 
-###Abstract factory and Factory
+### Abstract factory and Factory
 MicrosoftServiceFactory and AppleServiceFactory(concrete factories) → Service factory(abstract factory)
 
-###Singleton
+### Singleton
 Creates only a single instance of the same object
 </details>
 
