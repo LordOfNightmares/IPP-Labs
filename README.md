@@ -1,7 +1,7 @@
 # IPP
 
 <details>
-<summary>Lab1 - Implemented Patterns
+<summary>Lab1 - Creational Patterns
 </summary>
  
 
