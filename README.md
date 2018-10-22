@@ -42,7 +42,7 @@ class AppleServiceFactory(ServiceFactory):
         return AppleDelivery()
 ```
 ### Singleton
-Creates only a single instance of the same object
+Creates only a single instance of of an object
 ```python3
 class Singleton(type):
     """
