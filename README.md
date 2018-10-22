@@ -1,7 +1,7 @@
 # IPP
-## ImplementedPatterns 
+ 
 <details>
-<summary>Task</summary>
+<summary>## ImplementedPatterns </summary>
 
 - Abstract Factory
 - Factory
