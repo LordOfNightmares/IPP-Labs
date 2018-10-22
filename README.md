@@ -58,7 +58,16 @@ class Singleton(type):
 ```
 ![ScreenShot](screens/1.png)
 ![ScreenShot](screens/2.png)
+```python3
+class MicrosoftApplications(Service, metaclass=Singleton):
+    def __init__(self):
+        Service.__init__(self, "Microsoft", "Applications")
 
+
+class MicrosoftDelivery(Service, metaclass=Singleton):
+    def __init__(self):
+        Service.__init__(self, "Microsoft", "Delivery")
+```
 The marked addresses of the object prove the Single instance of an object
 
 </details>
