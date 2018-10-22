@@ -60,7 +60,7 @@ class Singleton(type):
         return cls._instance
 ```
 ![ScreenShot](screens/1.png)
-
 ![ScreenShot](screens/2.png)
+The marked addresses of the object prove the Single instance of an object
 
 </details>
