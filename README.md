@@ -1,7 +1,7 @@
 # IPP
 
 <details>
-<summary> **Lab1 ImplementedPatterns** </summary>
+<summary> Lab1 - Implemented Patterns </summary>
 
 - Abstract Factory
 - Factory
