@@ -51,7 +51,8 @@ class Singleton(type):
     """
 
     def __init__(cls, name, bases, attrs, **kwargs): # __init__(cls,...) where cls is classself 
-        super().__init__(name, bases, attrs) #The super function can be used to gain access to inherited methods – from a parent or sibling class – that has been overwritten in a class object.
+        super().__init__(name, bases, attrs) 
+        #The super function is used to gain access to inherited methods – from a parent or sibling class – that has been overwritten in a class object.
         cls._instance = None
 
     def __call__(cls, *args, **kwargs): # __call__() call operator
@@ -61,6 +62,7 @@ class Singleton(type):
 ```
 ![ScreenShot](screens/1.png)
 ![ScreenShot](screens/2.png)
+
 The marked addresses of the object prove the Single instance of an object
 
 </details>
