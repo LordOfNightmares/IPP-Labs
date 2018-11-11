@@ -4,7 +4,7 @@
 <summary>Lab1 - Creational Patterns
 </summary>
  
-
+## Creational Patterns
 - Abstract Factory
 - Factory
 - Singleton
@@ -69,5 +69,15 @@ class MicrosoftDelivery(Service, metaclass=Singleton):
         Service.__init__(self, "Microsoft", "Delivery")
 ```
 The marked addresses of the object prove the Single instance of an object
-
+<summary>Lab2 - Structural design patterns & Behavioral design patterns
+</summary>
+## Structural design patterns & Behavioral design patterns
+-Proxy
+-Decorator
+-State
+## Proxy with States
+work in progress
+## Decorator
+work in progress
 </details>
+
