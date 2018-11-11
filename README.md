@@ -74,9 +74,9 @@ The marked addresses of the object prove the Single instance of an object
 </summary>
  
 ## Structural design patterns & Behavioral design patterns
--Proxy
--Decorator
--State
+- Proxy
+- Decorator
+- State
 
 ## Proxy with States
 work in progress
