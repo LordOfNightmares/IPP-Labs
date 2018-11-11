@@ -1,6 +1,6 @@
 # IPP
 <details>
-<summary>Lab1 - Creational Patterns
+<summary> Lab1 - Creational Patterns
 </summary>
  
 ## Creational Patterns
@@ -70,7 +70,7 @@ class MicrosoftDelivery(Service, metaclass=Singleton):
 The marked addresses of the object prove the Single instance of an object
 </details>
 <details>
-<summary>Lab2 - Structural design patterns & Behavioral design patterns
+<summary> Lab2 - Structural design patterns & Behavioral design patterns
 </summary>
  
 ## Structural design patterns & Behavioral design patterns
