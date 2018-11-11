@@ -72,12 +72,15 @@ The marked addresses of the object prove the Single instance of an object
 <details>
 <summary>Lab2 - Structural design patterns & Behavioral design patterns
 </summary>
+ 
 ## Structural design patterns & Behavioral design patterns
 -Proxy
 -Decorator
 -State
+
 ## Proxy with States
 work in progress
+
 ## Decorator
 work in progress
 </details>
