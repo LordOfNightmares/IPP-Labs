@@ -1,7 +1,9 @@
 # IPP
 
 <details>
-<summary>Lab1 - Creational Patterns
+<summary>
+Lab1 - Creational Patterns
+Lab2 - Structural design patterns & Behavioral design patterns
 </summary>
  
 ## Creational Patterns
