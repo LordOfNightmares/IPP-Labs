@@ -1,6 +1,4 @@
-# Decorator/compromise/CoffeeShop.py
-# Coffee example with a compromise of basic
-# combinations and decorators
+# decorators
 import ProxyState
 
 
