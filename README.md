@@ -110,8 +110,6 @@ In the following diagram i try to describe a coffee and the variations that can 
 
 ![ScreenShot](screens/3.png)
 
-![ScreenShot]{align="center"}(screens/3.png)
-
 
 ```python3
 print('----------Process----------proxy cappuccino')
