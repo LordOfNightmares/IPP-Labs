@@ -31,7 +31,7 @@ class State(Proxy):
 ## Decorator
 In the following diagram i try to describe a coffee and the variations that can be applied to it also i will add the implemented object in a proxy:
 
-![ScreenShot](screens/3.png)
+![ScreenShot](../screens/3.png)
 
 ```python3
 print('----------Process----------proxy cappuccino')
@@ -62,4 +62,4 @@ print(Hyper.__repr__())
 - The first 3 outputs show how i put the decorated object in a proxy the first one contains the declaration of proxy and the rest 2 i just change the objects in state of the same proxy.*The proof of this concept is that proxy object is using the same address.*
 - In the rest 2 outputs i just demonstrate how the decorator works.
 
-![ScreenShot](screens/4.png)
+![ScreenShot](../screens/4.png)

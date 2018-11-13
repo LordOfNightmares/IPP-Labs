@@ -51,8 +51,8 @@ class Singleton(type):
             cls._instance = super().__call__(*args, **kwargs)
         return cls._instance
 ```
-![ScreenShot](screens/1.png)
-![ScreenShot](screens/2.png)
+![ScreenShot](../screens/1.png)
+![ScreenShot](../screens/2.png)
 ```python3
 class MicrosoftApplications(Service, metaclass=Singleton):
     def __init__(self):
