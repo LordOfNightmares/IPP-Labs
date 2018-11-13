@@ -133,10 +133,9 @@ Hyper = ExtraEspresso(Decaf(Dry(EspressoConPanna())))
 print(Hyper.getDescription(), ": $", Hyper.getTotalCost())
 print(Hyper.__repr__())
 ```
-The first 3 outputs show how i put the decorated object in a proxy the first one contains the declaration of proxy and the rest 2 i just change the objects in state of the same proxy.
-
-The proof of this concept is that proxy object is using the same address.
+- The first 3 outputs show how i put the decorated object in a proxy the first one contains the declaration of proxy and the rest 2 i just change the objects in state of the same proxy.*The proof of this concept is that proxy object is using the same address.*
+- In the rest 2 outputs i just demonstrate how the decorator works.
 
 ![ScreenShot](screens/4.png)
-In the rest 2 outputs i just demonstrate how the decorator works.
+
 </details>
