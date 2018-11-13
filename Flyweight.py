@@ -1,45 +1,74 @@
-class ComplexGenetics(object):
+"""
+Flyweight - Use sharing to support large numbers of fine-grained objects
+efficiently.
+"""
+
+import abc
+
+
+class FlyweightFactory:
+    """
+    Create and manage flyweight objects.
+    Ensure that flyweights are shared properly. When a client requests a
+    flyweight, the FlyweightFactory object supplies an existing instance
+    or creates one, if none exists.
+    """
+
     def __init__(self):
+        self._flyweights = {}
+
+    def get_flyweight(self, key):
+        try:
+            flyweight = self._flyweights[key]
+        except KeyError:
+            flyweight = ConcreteFlyweight()
+            self._flyweights[key] = flyweight
+        return flyweight
+
+
+class Flyweight(metaclass=abc.ABCMeta):
+    """
+    Declare an interface through which flyweights can receive and act on
+    extrinsic state.
+    """
+
+    def __init__(self):
+        self.intrinsic_state = None
+
+    @abc.abstractmethod
+    def operation(self, extrinsic_state):
         pass
 
-    def genes(self, gene_code):
-        return "ComplexPatter[%s]TooHugeinSize" % (gene_code)
+
+class ConcreteFlyweight(Flyweight):
+    """
+    Implement the Flyweight interface and add storage for intrinsic
+    state, if any. A ConcreteFlyweight object must be sharable. Any
+    state it stores must be intrinsic; that is, it must be independent
+    of the ConcreteFlyweight object's context.
+    """
+
+    def operation(self, *extrinsic_state):
+        print(self, *extrinsic_state)
 
 
-class Families(object):
-    family = {}
-
-    def __new__(cls, name, family_id):
-        try:
-            id = cls.family[family_id]
-        except KeyError:
-            id = object.__new__(cls)
-            cls.family[family_id] = id
-        return id
-
-    def set_genetic_info(self, genetic_info):
-        cg = ComplexGenetics()
-        self.genetic_info = cg.genes(genetic_info)
-
-    def get_genetic_info(self):
-        return (self.genetic_info)
+def printing(val, flyweight_factory):
+    concrete_flyweight = flyweight_factory.get_flyweight(val)
+    # print(val, concrete_flyweight)
+    concrete_flyweight.operation("hello", val)
 
 
-def test():
-    data = (('a', 1, 'ATAG'), ('a', 2, 'AAGT'), ('b', 1, 'ATAG'))
-    family_objects = []
-    for i in data:
-        obj = Families(i[0], i[1])
-        obj.set_genetic_info(i[2])
-        family_objects.append(obj)
-
-    for i in family_objects:
-        print("id = " + str(id(i)))
-
-        print(i.get_genetic_info())
-
-    print("similar id's says that they are same objects ")
+def main():
+    flyweight_factory = FlyweightFactory()
+    printing("hey", flyweight_factory)
+    printing("hey", flyweight_factory)
+    printing("key", flyweight_factory)
+    printing("key", flyweight_factory)
+    printing(50, flyweight_factory)
+    printing(50, flyweight_factory)
+    for i in range(3):
+        printing(i, flyweight_factory)
 
 
-if __name__ == '__main__':
-    test()
+if __name__ == "__main__":
+    main()
