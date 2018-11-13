@@ -90,7 +90,7 @@ class Proxy:
         return getattr(self.__implementation, name)
 
 ```
-After what i take the implementation from proxy and change the implementation without losing the object memory allocation in another sense we just change the *state*.
+After what, i take the implementation from proxy and change the implementation without losing the object memory allocation in another sense we just change the *state*.
 ```python3
 class State(Proxy):
     def __init__(self, imp):
