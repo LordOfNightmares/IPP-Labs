@@ -105,7 +105,7 @@ class State(Proxy):
 ## Decorator
 In the following diagram i try to describe a coffee and the variations that can be applied to it also i will add the implemented object in a proxy:
 
-![ScreenShot](screens/3.png){align='center'}
+![ScreenShot](screens/3.png){style="align:center"}
 
 ```python3
 print('----------Process----------proxy cappuccino')
