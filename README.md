@@ -1,4 +1,4 @@
-# IPP
+# IPP - Design Programming Patterns(python)
 <details>
 <summary> <b>Lab1</b> - Creational Patterns
 </summary>
@@ -76,7 +76,7 @@ The marked addresses of the object prove the Single instance of an object
 </summary>
 
 
-## Structural design patterns & Behavioral design patterns
+## Structural Patterns & Behavioral Patterns
 - Proxy
 - State
 - Decorator
@@ -149,7 +149,7 @@ print(Hyper.__repr__())
 </summary>
 
  
-## Creational patterns, Structural,patterns & Behavioral patterns
+## Creational Patterns, Structural Patterns & Behavioral Patterns
 - Prototype
 - Strategy
 - Flyweight
