@@ -72,7 +72,7 @@ The marked addresses of the object prove the Single instance of an object
 
 </details>
 <details>
-<summary> <b>Lab2</b> - Structural design patterns & Behavioral design patterns
+<summary> <b>Lab2</b> - Structural Patterns & Behavioral Patterns
 </summary>
 
 
@@ -145,7 +145,7 @@ print(Hyper.__repr__())
 
 </details>
 <details>
-<summary> <b>Lab3</b> - Creational patterns, Structural,patterns & Behavioral patterns
+<summary> <b>Lab3</b> - Creational Patterns, Structural Patterns & Behavioral Patterns
 </summary>
 
  
