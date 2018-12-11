@@ -153,7 +153,7 @@ print(Hyper.__repr__())
 - Prototype
 - Strategy
 - Flyweight
-- Facade
+- Façade
 
 ## Prototype
 
@@ -167,7 +167,7 @@ print(Hyper.__repr__())
 
 
 ![ScreenShot](screens/7.png)
-## Facade
+## Façade
 
 
 ![ScreenShot](screens/8.png)
