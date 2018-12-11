@@ -72,6 +72,6 @@ def flyweight_main():
 
 
 
-# if __name__ == "__main__":
-#     # flyweight_main()
-#     #combinations()
+if __name__ == "__main__":
+     flyweight_main()
+     #combinations()

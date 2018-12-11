@@ -1,4 +1,3 @@
-import abc
 import Prototype as P
 from Strategy import *
 

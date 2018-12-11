@@ -10,21 +10,24 @@ class StrategyExample:
 
     def execute(self, flyweight_factory):
         print(self.name)
-        print(self)
+        # print(self)
         return F.printing("flyweight execution example strat", flyweight_factory)
 
 
 def replace1(self, flyweight_factory):
-    print(self.name + ' Replacement Strategy 1')
+    print('Replacement Strategy 1')
+    # print(self)
     return F.printing("flyweight Replacement 1", flyweight_factory)
 
 
 def replace2(self, flyweight_factory):
-    print(self.name + ' Replacement Strategy 2')
+    print('Replacement Strategy 2')
+    # print(self)
     return F.printing("flyweight Replacement 2", flyweight_factory)
 
 
 def test():
+    fl = F.FlyweightFactory()
     strat0 = StrategyExample()
 
     strat1 = StrategyExample(replace1)
@@ -33,13 +36,10 @@ def test():
     strat2 = StrategyExample(replace2)
     strat2.name = 'Strategy Example 2'
 
-    strat0.execute()
-    strat1.execute()
-    strat2.execute()
+    strat0.execute(fl)
+    strat1.execute(fl)
+    strat2.execute(fl)
 
 
-
-
-#
-# if __name__ == '__main__':
-#     combinations()
+if __name__ == '__main__':
+    test()

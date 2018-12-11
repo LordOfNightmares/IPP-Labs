@@ -144,3 +144,33 @@ print(Hyper.__repr__())
 
 
 </details>
+<details>
+<summary> <b>Lab3</b> - Creational patterns, Structural,patterns & Behavioral patterns
+</summary>
+
+ 
+## Creational patterns, Structural,patterns & Behavioral patterns
+- Prototype
+- Strategy
+- Flyweight
+- Facade
+
+## Prototype
+
+
+![ScreenShot](screens/5.png)
+## Strategy
+
+
+![ScreenShot](screens/6.png)
+## Flyweight
+
+
+![ScreenShot](screens/7.png)
+## Facade
+
+
+![ScreenShot](screens/8.png)
+
+![ScreenShot](screens/9.png)
+</details>
