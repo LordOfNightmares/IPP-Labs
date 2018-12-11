@@ -49,26 +49,29 @@ class ConcreteFlyweight(Flyweight):
     """
 
     def operation(self, *extrinsic_state):
-        print(self, *extrinsic_state)
+        return self, extrinsic_state
 
 
 def printing(val, flyweight_factory):
     concrete_flyweight = flyweight_factory.get_flyweight(val)
-    # print(val, concrete_flyweight)
-    concrete_flyweight.operation("hello", val)
+    return concrete_flyweight.operation("hello", val)
 
 
-def main():
+def flyweight_main():
     flyweight_factory = FlyweightFactory()
-    printing("hey", flyweight_factory)
-    printing("hey", flyweight_factory)
-    printing("key", flyweight_factory)
-    printing("key", flyweight_factory)
-    printing(50, flyweight_factory)
-    printing(50, flyweight_factory)
+    print(printing("hey", flyweight_factory))
+    print(printing("hey", flyweight_factory))
+    print(printing("key", flyweight_factory))
+    print(printing("key", flyweight_factory))
+    print(printing(50, flyweight_factory))
+    print(printing(50, flyweight_factory))
     for i in range(3):
-        printing(i, flyweight_factory)
+        print(printing(i, flyweight_factory))
 
 
-if __name__ == "__main__":
-    main()
+
+
+
+# if __name__ == "__main__":
+#     # flyweight_main()
+#     #combinations()
