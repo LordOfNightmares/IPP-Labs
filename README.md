@@ -146,7 +146,7 @@ print(Hyper.__repr__())
 
 </details>
 <details>
-<summary> <b>Lab3</b> - Creational Patterns, Structural Patterns & Behavioral Patterns (to be finished)
+<summary> <b>Lab3</b> - Creational Patterns, Structural Patterns & Behavioral Patterns
 </summary>
 
  
