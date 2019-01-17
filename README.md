@@ -302,6 +302,7 @@ class ConcreteFlyweight(Flyweight):
 
 ## Façade
 A facade is an object that provides a simplified interface to a larger body of code, such as a class library, meaning in a way encapsulating more functions in one.
+In Facade i also inplemented the other 3 patterns(Flyweight,Strategy,Prototype).
 
 ![ScreenShot](screens/8.png)
 
