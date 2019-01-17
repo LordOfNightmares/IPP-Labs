@@ -149,7 +149,7 @@ print(Hyper.__repr__())
 </summary>
 
  
-## Creational Patterns, Structural Patterns & Behavioral Patterns
+## Creational Patterns, Structural Patterns & Behavioral Patterns (to be finished)
 - Prototype
 - Strategy
 - Flyweight
