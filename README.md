@@ -162,6 +162,8 @@ Prototype creates a clone of a method, which is why the address of both the real
 
 ![ScreenShot](screens/5.png)
 
+### Implementation
+
 ```python3
 class Prototype:
     """ Object, that can be cloned.
@@ -212,6 +214,8 @@ Strategy allows a change of algorithm at runtime.
 
 ![ScreenShot](screens/7.png)
 
+### Implementation
+
 ```python3
 class StrategyExample:
     def __init__(self, func=None):
@@ -243,6 +247,8 @@ Flyweight ,uses sharing to support large numbers of fine-grained objects
 efficiently, meaning its a way to make the application more efficient in memory management.
 
 ![ScreenShot](screens/6.png)
+
+### Implementation
 
 ```python3
 import abc
@@ -300,6 +306,8 @@ A facade is an object that provides a simplified interface to a larger body of c
 ![ScreenShot](screens/8.png)
 
 ![ScreenShot](screens/9.png)
+
+### Implementation
 
 ```python3
 def upfly(v, flyweight_factory):
