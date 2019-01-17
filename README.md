@@ -204,7 +204,8 @@ class ProductType2(Prototype):
         self._value = number
 
     def clone(self):
-        return copy.copy(self)```
+        return copy.copy(self)
+```
 
 ## Strategy
 Strategy allows a change of algorithm at runtime.
