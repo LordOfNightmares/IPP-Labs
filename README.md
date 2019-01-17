@@ -157,20 +157,157 @@ print(Hyper.__repr__())
 
 ## Prototype
 
+Prototype creates a clone of a method, which is why the address of both the real object and the clone is similar
 
 ![ScreenShot](screens/5.png)
+
+```class Prototype:
+    """ Object, that can be cloned.
+    This is just a base class, so the clone() method
+    is not implemented. But all subclasses have to
+    override it.
+    """
+
+    _type = None
+    _value = None
+
+    def clone(self):
+        pass
+    def getType(self):
+        return self._type
+
+    def getValue(self):
+        return self._value
+
+
+class ProductType1(Prototype):
+    """ Concrete prototype.
+    Implementation of Prototype. Important part is the
+    clone() method.
+    """
+
+    def __init__(self, number):
+        self._type = self
+        self._value = number
+
+    def clone(self):
+        return copy.copy(self)
+
+
+class ProductType2(Prototype):
+    """ Concrete prototype. """
+
+    def __init__(self, number):
+        self._type = self
+        self._value = number
+
+    def clone(self):
+        return copy.copy(self)```
+
 ## Strategy
-
-
-![ScreenShot](screens/6.png)
-## Flyweight
-
+Strategy allows a change of algorithm at runtime.
 
 ![ScreenShot](screens/7.png)
-## Façade
 
+```
+class StrategyExample:
+    def __init__(self, func=None):
+        self.name = 'Strategy Example 0'
+        if func is not None:
+            self.execute = types.MethodType(func, self)
+
+    def execute(self, flyweight_factory):
+        print(self.name)
+        # print(self)
+        return F.printing("flyweight execution example strat", flyweight_factory)
+
+
+def replace1(self, flyweight_factory):
+    print('Replacement Strategy 1')
+    # print(self)
+    return F.printing("flyweight Replacement 1", flyweight_factory)
+
+
+def replace2(self, flyweight_factory):
+    print('Replacement Strategy 2')
+    # print(self)
+    return F.printing("flyweight Replacement 2", flyweight_factory)
+```
+
+## Flyweight
+
+Flyweight ,uses sharing to support large numbers of fine-grained objects
+efficiently, meaning its a way to make the application more efficient in memory management.
+
+![ScreenShot](screens/6.png)
+
+```
+import abc
+
+
+class FlyweightFactory:
+    """
+    Create and manage flyweight objects.
+    Ensure that flyweights are shared properly. When a client requests a
+    flyweight, the FlyweightFactory object supplies an existing instance
+    or creates one, if none exists.
+    """
+
+    def __init__(self):
+        self._flyweights = {}
+
+    def get_flyweight(self, key):
+        try:
+            flyweight = self._flyweights[key]
+        except KeyError:
+            flyweight = ConcreteFlyweight()
+            self._flyweights[key] = flyweight
+        return flyweight
+
+
+class Flyweight(metaclass=abc.ABCMeta):
+    """
+    Declare an interface through which flyweights can receive and act on
+    extrinsic state.
+    """
+
+    def __init__(self):
+        self.intrinsic_state = None
+
+    @abc.abstractmethod
+    def operation(self, extrinsic_state):
+        pass
+
+
+class ConcreteFlyweight(Flyweight):
+    """
+    Implement the Flyweight interface and add storage for intrinsic
+    state, if any. A ConcreteFlyweight object must be sharable. Any
+    state it stores must be intrinsic; that is, it must be independent
+    of the ConcreteFlyweight object's context.
+    """
+
+    def operation(self, *extrinsic_state):
+        return self, extrinsic_state
+```
+
+## Façade
+A facade is an object that provides a simplified interface to a larger body of code, such as a class library, meaning in a way encapsulating more functions in one.
 
 ![ScreenShot](screens/8.png)
 
 ![ScreenShot](screens/9.png)
+
+```
+def upfly(v, flyweight_factory):
+    this = P.ProductType1(F.printing("flyweight2", flyweight_factory))
+    this2 = P.ProductType2(F.printing("flyweight1", flyweight_factory))
+    return v and this or this2
+
+
+def upstr(v, str, flyweight_factory):
+    this = P.ProductType1(str.execute(flyweight_factory))
+    this2 = P.ProductType2(str.execute(flyweight_factory))
+    return v and this or this2
+```
 </details>
