@@ -137,6 +137,7 @@ Hyper = ExtraEspresso(Decaf(Dry(EspressoConPanna())))
 print(Hyper.getDescription(), ": $", Hyper.getTotalCost())
 print(Hyper.__repr__())
 ```
+
 - The first 3 outputs show how i put the decorated object in a proxy the first one contains the declaration of proxy and the rest 2 i just change the objects in state of the same proxy.*The proof of this concept is that proxy object is using the same address.*
 - In the rest 2 outputs i just demonstrate how the decorator works.
 
@@ -161,7 +162,8 @@ Prototype creates a clone of a method, which is why the address of both the real
 
 ![ScreenShot](screens/5.png)
 
-```class Prototype:
+```python3
+class Prototype:
     """ Object, that can be cloned.
     This is just a base class, so the clone() method
     is not implemented. But all subclasses have to
@@ -209,7 +211,7 @@ Strategy allows a change of algorithm at runtime.
 
 ![ScreenShot](screens/7.png)
 
-```
+```python3
 class StrategyExample:
     def __init__(self, func=None):
         self.name = 'Strategy Example 0'
@@ -241,7 +243,7 @@ efficiently, meaning its a way to make the application more efficient in memory 
 
 ![ScreenShot](screens/6.png)
 
-```
+```python3
 import abc
 
 
@@ -298,7 +300,7 @@ A facade is an object that provides a simplified interface to a larger body of c
 
 ![ScreenShot](screens/9.png)
 
-```
+```python3
 def upfly(v, flyweight_factory):
     this = P.ProductType1(F.printing("flyweight2", flyweight_factory))
     this2 = P.ProductType2(F.printing("flyweight1", flyweight_factory))
@@ -310,4 +312,5 @@ def upstr(v, str, flyweight_factory):
     this2 = P.ProductType2(str.execute(flyweight_factory))
     return v and this or this2
 ```
+
 </details>
